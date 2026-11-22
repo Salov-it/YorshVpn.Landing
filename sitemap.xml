@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Главная -->
+    <url>
+        <loc>https://yorshvpn.ru/</loc>
+    </url>
+
+    <!-- Каталог статей -->
+    <url>
+        <loc>https://yorshvpn.ru/guides/</loc>
+    </url>
+
+    <!-- Статьи -->
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/chto-takoe-vpn/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/skachat-vpn/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/vpn-dlya-android/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/vpn-dlya-iphone/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/vpn-dlya-youtube/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/vpn-dlya-chatgpt/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/kak-podklyuchit-vpn/</loc>
+    </url>
+
+    <url>
+        <loc>https://yorshvpn.ru/guides/vpn-ne-rabotaet/</loc>
+    </url>
+
+</urlset>

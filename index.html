@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ёрш VPN — быстрый VPN для телефона и компьютера. Простое подключение, безлимитный трафик и подписка за 140 ₽ в месяц.">
     <meta name="theme-color" content="#0b1220">
-    <title>Ёрш VPN — быстрый и стабильный VPN</title>
+
+    <!-- Основные SEO-метаданные -->
+    <title>Ёрш VPN — быстрый VPN для телефона и компьютера</title>
+    <meta name="description" content="Ёрш VPN — VPN для телефона и компьютера. Простое подключение, безлимитный трафик и подписка за 140 ₽ в месяц.">
+    <link rel="canonical" href="https://yorshvpn.ru/">
+
+    <!-- Open Graph: отображение ссылки при публикации в мессенджерах и соцсетях -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Ёрш VPN">
+    <meta property="og:title" content="Ёрш VPN — быстрый VPN для телефона и компьютера">
+    <meta property="og:description" content="Простое подключение, безлимитный трафик и подписка за 140 ₽ в месяц.">
+    <meta property="og:url" content="https://yorshvpn.ru/">
+    <!-- Добавь изображение 1200×630 по адресу /images/og-cover.jpg и раскомментируй строку ниже. -->
+    <!-- <meta property="og:image" content="https://yorshvpn.ru/images/og-cover.jpg"> -->
+
+    <!-- Структурированные данные: сайт и организация -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://yorshvpn.ru/#organization",
+          "name": "Ёрш VPN",
+          "url": "https://yorshvpn.ru/",
+          "description": "VPN-сервис с простым подключением, безлимитным трафиком и подпиской за 140 ₽ в месяц.",
+          "sameAs": [
+            "https://t.me/yorshvpn_bot",
+            "https://t.me/yorshvpnSupport"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://yorshvpn.ru/#website",
+          "url": "https://yorshvpn.ru/",
+          "name": "Ёрш VPN",
+          "inLanguage": "ru-RU",
+          "publisher": {
+            "@id": "https://yorshvpn.ru/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="/css/landing.css">
 </head>
 <body>
@@ -16,64 +60,25 @@
          ========================================================= -->
 
     <header class="landing-header">
-
         <div class="landing-container header-inner">
-
-            <!-- BRAND -->
-
-            <a href="/" class="brand">
-
-                <div class="brand-logo">
-                    Ё
-                </div>
-
-                <div class="brand-name">
-                    Ёрш<span>VPN</span>
-                </div>
-
+            <a href="/" class="brand" aria-label="Ёрш VPN — главная">
+                <div class="brand-logo">Ё</div>
+                <div class="brand-name">Ёрш<span>VPN</span></div>
             </a>
 
-
-            <!-- DESKTOP NAV -->
-
-            <nav class="landing-nav">
-
-                <a href="/#advantages">
-                    Преимущества
-                </a>
-
-                <a href="/#how">
-                    Как подключиться
-                </a>
-
-                <a href="/#pricing">
-                    Тариф
-                </a>
-
-                <a href="/guides">
-                    Полезное
-                </a>
-
-                <a href="/#faq">
-                    FAQ
-                </a>
-
+            <nav class="landing-nav" aria-label="Основная навигация">
+                <a href="/#advantages">Преимущества</a>
+                <a href="/#how">Как подключиться</a>
+                <a href="/#pricing">Тариф</a>
+                <a href="/guides">Полезное</a>
+                <a href="/#faq">FAQ</a>
             </nav>
 
-
-            <!-- DESKTOP ACTION -->
-
             <div class="header-actions">
-
-                <a href="https://cabinet.yorshvpn.ru/"
-                       class="button button-ghost">
-                        Личный кабинет
-                    </a>
-
+                <a href="https://cabinet.yorshvpn.ru/" class="button button-ghost">
+                    Личный кабинет
+                </a>
             </div>
-
-
-            <!-- MOBILE BUTTON -->
 
             <button type="button"
                     class="landing-mobile-menu-button"
@@ -82,1094 +87,449 @@
                     aria-controls="landingMobileMenu"
                     aria-expanded="false"
                     onclick="toggleLandingMenu()">
-
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
-
         </div>
 
-
-        <!-- =====================================================
-             MOBILE MENU
-             ===================================================== -->
-
-        <div class="landing-mobile-menu"
-             id="landingMobileMenu">
-
+        <!-- MOBILE MENU -->
+        <div class="landing-mobile-menu" id="landingMobileMenu">
             <div class="landing-container landing-mobile-menu-inner">
-
-                <nav class="landing-mobile-nav">
-
-                    <a href="/#advantages"
-                       onclick="closeLandingMenu()">
-
-                        <span>
-                            Преимущества
-                        </span>
-
-                        <span>→</span>
-
+                <nav class="landing-mobile-nav" aria-label="Мобильная навигация">
+                    <a href="/#advantages" onclick="closeLandingMenu()">
+                        <span>Преимущества</span><span aria-hidden="true">→</span>
                     </a>
-
-
-                    <a href="/#how"
-                       onclick="closeLandingMenu()">
-
-                        <span>
-                            Как подключиться
-                        </span>
-
-                        <span>→</span>
-
+                    <a href="/#how" onclick="closeLandingMenu()">
+                        <span>Как подключиться</span><span aria-hidden="true">→</span>
                     </a>
-
-
-                    <a href="/#pricing"
-                       onclick="closeLandingMenu()">
-
-                        <span>
-                            Тариф
-                        </span>
-
-                        <span>→</span>
-
+                    <a href="/#pricing" onclick="closeLandingMenu()">
+                        <span>Тариф</span><span aria-hidden="true">→</span>
                     </a>
-
-
-                    <a href="/guides"
-                       onclick="closeLandingMenu()">
-
-                        <span>
-                            Полезное
-                        </span>
-
-                        <span>→</span>
-
+                    <a href="/guides" onclick="closeLandingMenu()">
+                        <span>Полезное</span><span aria-hidden="true">→</span>
                     </a>
-
-
-                    <a href="/#faq"
-                       onclick="closeLandingMenu()">
-
-                        <span>
-                            FAQ
-                        </span>
-
-                        <span>→</span>
-
+                    <a href="/#faq" onclick="closeLandingMenu()">
+                        <span>FAQ</span><span aria-hidden="true">→</span>
                     </a>
-
                 </nav>
 
-
-                <!-- MOBILE ACCOUNT -->
-
                 <div class="landing-mobile-account">
-
-                    <a href="https://cabinet.yorshvpn.ru/"
-                               class="landing-mobile-account-button">
-                                <span>Личный кабинет</span>
-                                <span>→</span>
-                            </a>
-
+                    <a href="https://cabinet.yorshvpn.ru/" class="landing-mobile-account-button">
+                        <span>Личный кабинет</span><span aria-hidden="true">→</span>
+                    </a>
                 </div>
-
             </div>
-
         </div>
-
     </header>
 
-
     <main>
-
-        <!-- =========================================================
-             HERO
-             ========================================================= -->
-
-        <section class="hero">
-
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-glow hero-glow-one"></div>
             <div class="hero-glow hero-glow-two"></div>
 
-
             <div class="landing-container hero-grid">
-
-                <!-- LEFT -->
-
                 <div class="hero-content">
-
                     <div class="hero-label">
-
                         <span class="hero-label-dot"></span>
-
                         Быстрый VPN без сложных настроек
-
                     </div>
 
-
-                    <h1>
-                        Интернет работает.
-                        <span>Как и должен.</span>
+                    <h1 id="hero-title">
+                        Быстрый VPN для телефона и компьютера.
+                        <span>Без сложных настроек.</span>
                     </h1>
 
-
                     <p class="hero-subtitle">
-
                         Ёрш VPN помогает пользоваться привычными
                         сайтами, приложениями и сервисами без лишней
                         возни с настройками.
-
                         Подключение занимает несколько минут.
-
                     </p>
 
-
                     <div class="hero-buttons">
-
-                        <a href="https://cabinet.yorshvpn.ru/"
-                           class="button button-primary button-large">
-
-                            Подключить Ёрш VPN
-
-                            <span>→</span>
-
+                        <a href="https://cabinet.yorshvpn.ru/" class="button button-primary button-large">
+                            Подключить Ёрш VPN <span aria-hidden="true">→</span>
                         </a>
-
-
-                        <a href="#how"
-                           class="button button-ghost button-large">
-
+                        <a href="#how" class="button button-ghost button-large">
                             Как это работает
-
                         </a>
-
                     </div>
-
 
                     <div class="hero-platforms">
-
                         <span>Всё просто</span>
-
                         <div class="platform-list">
-
                             <span>✓ 140 ₽ / месяц</span>
-
                             <span>✓ Безлимитный трафик</span>
-
                             <span>✓ Телефон и компьютер</span>
-
                         </div>
-
                     </div>
-
                 </div>
-
-
-                <!-- RIGHT -->
 
                 <div class="hero-visual">
-
                     <div class="hero-card">
-
-
                         <div class="hero-card-top">
-
                             <div>
-
-                                <span class="card-label">
-                                    Ёрш VPN
-                                </span>
-
-                                <h3>
-                                    Всё работает
-                                </h3>
-
+                                <span class="card-label">Ёрш VPN</span>
+                                <h3>Всё работает</h3>
                             </div>
-
-
                             <div class="connection-status">
-
                                 <span></span>
-
                                 Подключено
-
                             </div>
-
                         </div>
-
-
-                        <!-- MASCOT -->
 
                         <div class="fish-wrapper">
-
-                            <div class="fish-circle">
-                                🐟
-                            </div>
-
+                            <div class="fish-circle" aria-hidden="true">🐟</div>
                             <div class="fish-wave wave-one"></div>
-
                             <div class="fish-wave wave-two"></div>
-
                         </div>
-
-
-                        <!-- SERVER -->
 
                         <div class="server-card">
-
                             <div class="server-left">
-
-                                <div class="flag">
-                                    🌍
-                                </div>
-
+                                <div class="flag" aria-hidden="true">🌍</div>
                                 <div>
-
-                                    <small>
-                                        Подключение
-                                    </small>
-
-                                    <strong>
-                                        Оптимальный сервер
-                                    </strong>
-
+                                    <small>Подключение</small>
+                                    <strong>Оптимальный сервер</strong>
                                 </div>
-
                             </div>
-
-
-                            <div class="server-ping">
-                                42 ms
-                            </div>
-
+                            <div class="server-ping">42 ms</div>
                         </div>
-
-
-                        <!-- STATUS -->
 
                         <div class="connect-control">
-
-                            <div class="connect-icon">
-                                ✓
-                            </div>
-
+                            <div class="connect-icon" aria-hidden="true">✓</div>
                             <div>
-
-                                <small>
-                                    Статус
-                                </small>
-
-                                <strong>
-                                    Ёрш защищает соединение
-                                </strong>
-
+                                <small>Статус</small>
+                                <strong>Ёрш защищает соединение</strong>
                             </div>
-
                         </div>
-
                     </div>
-
-
-                    <!-- FLOATING CARDS -->
 
                     <div class="floating-card floating-speed">
-
-                        <span>
-                            ⚡
-                        </span>
-
+                        <span aria-hidden="true">⚡</span>
                         <div>
-
-                            <strong>
-                                Высокая скорость
-                            </strong>
-
-                            <small>
-                                для привычных сервисов
-                            </small>
-
+                            <strong>Высокая скорость</strong>
+                            <small>для привычных сервисов</small>
                         </div>
-
                     </div>
-
 
                     <div class="floating-card floating-price">
-
-                        <strong>
-                            140 ₽
-                        </strong>
-
-                        <span>
-                            / месяц
-                        </span>
-
+                        <strong>140 ₽</strong>
+                        <span>/ месяц</span>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             SERVICES
-             ========================================================= -->
-
-        <section class="trust-strip">
-
+        <!-- SERVICES -->
+        <section class="trust-strip" aria-label="Популярные сервисы">
             <div class="landing-container trust-content">
-
-                <span>
-                    Пользуйтесь привычными сервисами
-                </span>
-
-
+                <span>Пользуйтесь привычными сервисами</span>
                 <div class="services">
-
                     <span>YouTube</span>
-
                     <span>ChatGPT</span>
-
                     <span>Instagram</span>
-
                     <span>Spotify</span>
-
                     <span>Discord</span>
-
                     <span>и другими</span>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             ADVANTAGES
-             ========================================================= -->
-
-        <section id="advantages"
-                 class="section">
-
+        <!-- ADVANTAGES -->
+        <section id="advantages" class="section" aria-labelledby="advantages-title">
             <div class="landing-container">
-
-
                 <div class="section-head">
-
-                    <div class="section-badge">
-                        Почему Ёрш
-                    </div>
-
-
-                    <h2>
+                    <div class="section-badge">Почему Ёрш</div>
+                    <h2 id="advantages-title">
                         Всё необходимое.
                         <span>Ничего лишнего.</span>
                     </h2>
-
-
                     <p>
-
                         Мы сделали VPN, которым не нужно учиться
                         пользоваться.
-
                         Подключились — и занимаетесь своими делами.
-
                     </p>
-
                 </div>
 
-
                 <div class="advantages-grid">
-
-
-                    <!-- SPEED -->
-
                     <article class="advantage-card advantage-large">
-
-                        <div class="advantage-icon">
-                            ⚡
-                        </div>
-
-
+                        <div class="advantage-icon" aria-hidden="true">⚡</div>
                         <div>
-
-                            <h3>
-                                Быстро там, где это важно
-                            </h3>
-
-
+                            <h3>Быстро там, где это важно</h3>
                             <p>
-
                                 Видео, сайты, мессенджеры и рабочие
                                 сервисы — без ощущения, что весь интернет
                                 внезапно стал медленнее.
-
                             </p>
-
                         </div>
-
-
-                        <div class="speed-decoration">
-
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-
+                        <div class="speed-decoration" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
                         </div>
-
                     </article>
 
-
-                    <!-- TRAFFIC -->
-
                     <article class="advantage-card">
-
-                        <div class="advantage-icon">
-                            ∞
-                        </div>
-
-
-                        <h3>
-                            Без подсчёта гигабайтов
-                        </h3>
-
-
+                        <div class="advantage-icon" aria-hidden="true">∞</div>
+                        <h3>Без подсчёта гигабайтов</h3>
                         <p>
-
                             Не нужно постоянно проверять остаток
                             трафика.
-
                             Пользуйтесь VPN столько, сколько нужно.
-
                         </p>
-
                     </article>
 
-
-                    <!-- SIMPLE -->
-
                     <article class="advantage-card">
-
-                        <div class="advantage-icon">
-                            ◉
-                        </div>
-
-
-                        <h3>
-                            Подключается за пару минут
-                        </h3>
-
-
+                        <div class="advantage-icon" aria-hidden="true">◉</div>
+                        <h3>Подключается за пару минут</h3>
                         <p>
-
                             Получаете подписку, добавляете её
                             в приложение и нажимаете одну кнопку.
-
                         </p>
-
                     </article>
 
-
-                    <!-- DEVICES -->
-
                     <article class="advantage-card">
-
-                        <div class="advantage-icon">
-                            ▣
-                        </div>
-
-
-                        <h3>
-                            Один VPN для ваших устройств
-                        </h3>
-
-
+                        <div class="advantage-icon" aria-hidden="true">▣</div>
+                        <h3>Один VPN для ваших устройств</h3>
                         <p>
-
                             Используйте Ёрш на компьютере,
                             телефоне и других поддерживаемых
                             устройствах.
-
                         </p>
-
                     </article>
 
-
-                    <!-- SUPPORT -->
-
                     <article class="advantage-card advantage-large">
-
-                        <div class="advantage-icon">
-                            ♡
-                        </div>
-
-
-                        <h3>
-                            Если что — мы рядом
-                        </h3>
-
-
+                        <div class="advantage-icon" aria-hidden="true">♡</div>
+                        <h3>Если что — мы рядом</h3>
                         <p>
-
                             Не получилось подключиться или что-то
                             работает не так?
-
                             Напишите нам. Поможем разобраться без
                             шаблонных ответов.
-
                         </p>
-
-
                         <a href="https://t.me/yorshvpnSupport"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="text-link">
-
                             Написать в поддержку →
-
                         </a>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             HOW IT WORKS
-             ========================================================= -->
-
-        <section id="how"
-                 class="section section-dark">
-
+        <!-- HOW IT WORKS -->
+        <section id="how" class="section section-dark" aria-labelledby="how-title">
             <div class="landing-container">
-
-
                 <div class="section-head section-head-center">
-
-                    <div class="section-badge">
-                        Проще некуда
-                    </div>
-
-
-                    <h2>
+                    <div class="section-badge">Проще некуда</div>
+                    <h2 id="how-title">
                         От регистрации до VPN —
                         <span>три шага.</span>
                     </h2>
-
-
-                    <p>
-
-                        Никаких ручных конфигов и десяти страниц
-                        инструкций.
-
-                    </p>
-
+                    <p>Никаких ручных конфигов и десяти страниц инструкций.</p>
                 </div>
-
 
                 <div class="steps">
-
-
-                    <!-- STEP 1 -->
-
                     <article class="step">
-
-                        <div class="step-number">
-                            01
-                        </div>
-
-
-                        <div class="step-icon">
-                            👤
-                        </div>
-
-
-                        <h3>
-                            Создайте аккаунт
-                        </h3>
-
-
+                        <div class="step-number">01</div>
+                        <div class="step-icon" aria-hidden="true">👤</div>
+                        <h3>Создайте аккаунт</h3>
                         <p>
-
                             Войдите на сайте или начните пользоваться
                             Ёрш VPN через Telegram.
-
                         </p>
-
                     </article>
 
-
-                    <div class="step-arrow">
-                        →
-                    </div>
-
-
-                    <!-- STEP 2 -->
+                    <div class="step-arrow" aria-hidden="true">→</div>
 
                     <article class="step">
-
-                        <div class="step-number">
-                            02
-                        </div>
-
-
-                        <div class="step-icon">
-                            ⚡
-                        </div>
-
-
-                        <h3>
-                            Оформите подписку
-                        </h3>
-
-
+                        <div class="step-number">02</div>
+                        <div class="step-icon" aria-hidden="true">⚡</div>
+                        <h3>Оформите подписку</h3>
                         <p>
-
                             После оплаты вы сразу получите
                             персональную ссылку для подключения.
-
                         </p>
-
                     </article>
 
-
-                    <div class="step-arrow">
-                        →
-                    </div>
-
-
-                    <!-- STEP 3 -->
+                    <div class="step-arrow" aria-hidden="true">→</div>
 
                     <article class="step">
-
-                        <div class="step-number">
-                            03
-                        </div>
-
-
-                        <div class="step-icon">
-                            ✓
-                        </div>
-
-
-                        <h3>
-                            Включите VPN
-                        </h3>
-
-
+                        <div class="step-number">03</div>
+                        <div class="step-icon" aria-hidden="true">✓</div>
+                        <h3>Включите VPN</h3>
                         <p>
-
                             Добавьте подписку в приложение.
-
                             Нажмите «Подключить».
-
                             Готово.
-
                         </p>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             PRICING
-             ========================================================= -->
-
-        <section id="pricing"
-                 class="section">
-
+        <!-- PRICING -->
+        <section id="pricing" class="section" aria-labelledby="pricing-title">
             <div class="landing-container">
-
-
                 <div class="section-head section-head-center">
-
-                    <div class="section-badge">
-                        Один тариф
-                    </div>
-
-
-                    <h2>
+                    <div class="section-badge">Один тариф</div>
+                    <h2 id="pricing-title">
                         Всё включено.
                         <span>140 ₽ в месяц.</span>
                     </h2>
-
-
                     <p>
-
                         Без Premium, Ultra, Pro Max и других способов
                         заставить вас выбирать то, что вам не нужно.
-
                     </p>
-
                 </div>
-
 
                 <div class="pricing-wrapper">
-
-
                     <div class="pricing-card">
-
-
                         <div class="pricing-top">
-
                             <div>
-
-                                <span class="pricing-name">
-                                    Ёрш VPN
-                                </span>
-
-
-                                <p>
-                                    Полный доступ без ограничений по трафику
-                                </p>
-
+                                <span class="pricing-name">Ёрш VPN</span>
+                                <p>Полный доступ без ограничений по трафику</p>
                             </div>
-
-
-                            <div class="popular-label">
-                                Всё включено
-                            </div>
-
+                            <div class="popular-label">Всё включено</div>
                         </div>
-
 
                         <div class="price">
-
-                            <strong>
-                                140
-                            </strong>
-
-
+                            <strong>140</strong>
                             <div>
-
-                                <span>
-                                    ₽
-                                </span>
-
-                                <small>
-                                    / месяц
-                                </small>
-
+                                <span>₽</span>
+                                <small>/ месяц</small>
                             </div>
-
                         </div>
-
 
                         <div class="pricing-features">
-
-                            <div>
-                                <span>✓</span>
-                                Безлимитный трафик
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Быстрые серверы
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Телефон и компьютер
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Личный кабинет
-                            </div>
-
-                            <div>
-                                <span>✓</span>
-                                Помощь с подключением
-                            </div>
-
+                            <div><span>✓</span>Безлимитный трафик</div>
+                            <div><span>✓</span>Быстрые серверы</div>
+                            <div><span>✓</span>Телефон и компьютер</div>
+                            <div><span>✓</span>Личный кабинет</div>
+                            <div><span>✓</span>Помощь с подключением</div>
                         </div>
 
-
-                        <a href="https://cabinet.yorshvpn.ru/"
-                           class="button button-primary button-large pricing-button">
-
-                            Подключить за 140 ₽
-
-                            <span>→</span>
-
+                        <a href="https://cabinet.yorshvpn.ru/" class="button button-primary button-large pricing-button">
+                            Подключить за 140 ₽ <span aria-hidden="true">→</span>
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             FAQ
-             ========================================================= -->
-
-        <section id="faq"
-                 class="section section-dark">
-
+        <!-- FAQ -->
+        <section id="faq" class="section section-dark" aria-labelledby="faq-title">
             <div class="landing-container faq-layout">
-
-
                 <div class="section-head faq-title">
-
-                    <div class="section-badge">
-                        Без мелкого шрифта
-                    </div>
-
-
-                    <h2>
-                        Остались
-                        <span>вопросы?</span>
-                    </h2>
-
-
+                    <div class="section-badge">Без мелкого шрифта</div>
+                    <h2 id="faq-title">Остались <span>вопросы?</span></h2>
                     <p>
-
                         Собрали ответы на то, что обычно спрашивают
                         перед подключением.
-
                     </p>
-
                 </div>
-
 
                 <div class="faq-list">
-
-
                     <details open>
-
                         <summary>
-
                             Я никогда не пользовался VPN. Я разберусь?
-
-                            <span>+</span>
-
+                            <span aria-hidden="true">+</span>
                         </summary>
-
-
                         <p>
-
                             Да. После оформления подписки вы получите
                             ссылку и инструкцию по подключению.
-
                             Обычно весь процесс занимает несколько минут.
-
                         </p>
-
                     </details>
 
-
                     <details>
-
                         <summary>
-
                             Где можно использовать Ёрш VPN?
-
-                            <span>+</span>
-
+                            <span aria-hidden="true">+</span>
                         </summary>
-
-
                         <p>
-
                             На популярных мобильных и настольных
                             операционных системах.
-
                             Инструкции доступны после подключения.
-
                         </p>
-
                     </details>
 
-
                     <details>
-
                         <summary>
-
                             Есть ограничение по трафику?
-
-                            <span>+</span>
-
+                            <span aria-hidden="true">+</span>
                         </summary>
-
-
                         <p>
-
                             Нет фиксированного пакета гигабайтов.
-
                             Пользуйтесь интернетом в обычном режиме.
-
                         </p>
-
                     </details>
 
-
                     <details>
-
                         <summary>
-
                             А если у меня что-то не заработает?
-
-                            <span>+</span>
-
+                            <span aria-hidden="true">+</span>
                         </summary>
-
-
                         <p>
-
                             Напишите в поддержку.
-
                             Поможем проверить приложение,
                             подписку и настройки подключения.
-
                         </p>
-
                     </details>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================================================
-             FINAL CTA
-             ========================================================= -->
-
-        <section class="final-cta">
-
+        <!-- FINAL CTA -->
+        <section class="final-cta" aria-labelledby="final-cta-title">
             <div class="cta-glow"></div>
-
-
             <div class="landing-container final-cta-content">
-
-                <div class="final-fish">
-                    🐟
-                </div>
-
-
-                <h2>
+                <div class="final-fish" aria-hidden="true">🐟</div>
+                <h2 id="final-cta-title">
                     Хватит разбираться с VPN.
-                    <span>
-                        Просто пользуйтесь интернетом.
-                    </span>
+                    <span>Просто пользуйтесь интернетом.</span>
                 </h2>
-
-
                 <p>
-
                     Ёрш берёт техническую часть на себя.
-
                     Вам остаётся нажать «Подключить».
-
                 </p>
-
-
-                <a href="https://cabinet.yorshvpn.ru/"
-                   class="button button-light button-large">
-
-                    Подключить Ёрш за 140 ₽
-
-                    <span>→</span>
-
+                <a href="https://cabinet.yorshvpn.ru/" class="button button-light button-large">
+                    Подключить Ёрш за 140 ₽ <span aria-hidden="true">→</span>
                 </a>
-
             </div>
-
         </section>
-
     </main>
 
-
-    <!-- =========================================================
-         FOOTER
-         ========================================================= -->
-
+    <!-- FOOTER -->
     <footer class="landing-footer">
-
-
         <div class="landing-container footer-content">
-
-
             <div>
-
-                <a href="/"
-                   class="brand">
-
-                    <div class="brand-logo">
-                        Ё
-                    </div>
-
-                    <div class="brand-name">
-                        Ёрш<span>VPN</span>
-                    </div>
-
+                <a href="/" class="brand" aria-label="Ёрш VPN — главная">
+                    <div class="brand-logo">Ё</div>
+                    <div class="brand-name">Ёрш<span>VPN</span></div>
                 </a>
-
-
-                <p>
-                    VPN, которым не нужно учиться пользоваться.
-                </p>
-
+                <p>VPN, которым не нужно учиться пользоваться.</p>
             </div>
-
 
             <div class="footer-links">
-
-                <a href="https://t.me/yorshvpn_bot"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    Telegram
-
-                </a>
-
-
-                <a href="https://t.me/yorshvpnSupport"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    Поддержка
-
-                </a>
-
+                <a href="https://t.me/yorshvpn_bot" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="https://t.me/yorshvpnSupport" target="_blank" rel="noopener noreferrer">Поддержка</a>
             </div>
-
         </div>
-
 
         <div class="landing-container copyright">
-
             © <span id="currentYear"></span> Ёрш VPN
-
         </div>
-
     </footer>
-
 </div>
+
 <script>
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    const currentYearElement = document.getElementById("currentYear");
+
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 </script>
 </body>
 </html>
